@@ -29,4 +29,4 @@ Router.when("/test", (req, res, match) => {
 });
 
 //Simple listening
-http.createServer(Router.listen).listen(80);
+http.createServer((req,res) => Router.listen).listen(80);
